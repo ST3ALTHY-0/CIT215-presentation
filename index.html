@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Clash Royale Cards</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: red;
+        }
+
+        .typeSelection {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .typeBox {
+            border: 1px solid #ccc;
+            padding: 15px 25px;
+            cursor: pointer;
+            text-align: center;
+            border-radius: 5px;
+            background: #eee;
+        }
+
+        .typeBox:hover {
+            background: red;
+            color: white;
+        }
+        
+
+        .cards {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap; 
+            gap: 10px;
+            align-items: flex-start;
+            justify-content: center;
+
+        }
+
+        .cardLine:hover {
+            background: lightslategray;
+            color: white;
+        }
+
+        .cardLine {
+            border: 1px solid #ccc;
+            padding: 8px;
+            width: 200px;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .cardLine img {
+            width: 80px;
+            margin-bottom: 5px;
+        }
+
+        .showInfo {
+            margin-top: 5px;
+            color: #333;
+            font-size: 0.9em;
+        }
+    </style>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="app.js" defer></script>
+</head>
+
+<body>
+    <h1>Clash Royale Card Viewer</h1>
+
+    <div class="typeSelection">
+        <div class="typeBox" id="Troop">Troop</div>
+        <div class="typeBox" id="Spell">Spell</div>
+        <div class="typeBox" id="Building">Building</div>
+    </div>
+    <div class="cards"></div>
+</body>
+
+</html>
